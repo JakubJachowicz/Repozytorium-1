@@ -7,6 +7,7 @@ int main()
     int i = 0;
     char ch;
 
+
     printf("Podawaj znaki; znak '\\n' konczy wprowadzanie:\n");
     while ((ch = getchar()) != '\n' && i<60)
     {
