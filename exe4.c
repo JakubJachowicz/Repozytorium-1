@@ -2,17 +2,29 @@
 
 int main()
 {
-    int licznik = 0;
-    int suma = 0;
-    int limit;
+    char ch, i, j;
+    int spacje, znaki;
 
-    printf("Sume ile liczb naturalnych ma podac program?\n");
-    scanf("%d", &limit);
-    while(licznik<=limit)
+    printf("Podaj dowolna wielka litere: ");
+    scanf("%c", &ch);
+    spacje = ch - 'A';
+    znaki = 1;
+    for (i = 'A'; i<=ch;i++)
     {
-        suma += licznik;
-        licznik++;
+        for(j=0;j<spacje;j++)
+        {
+            printf(" ");
+        }
+        for(j='A';j<i+1;j++)
+        {
+            printf("%c", j);
+        }
+        for(j=i-1;j>'A'-1;j--)
+        {
+            printf("%c", j);
+        }
+        printf("\n");
+        spacje--;
     }
-    printf("Suma %d pierwszych liczb naturalnych to %d.\n", limit, suma);
     return 0;
 }
