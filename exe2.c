@@ -2,10 +2,14 @@
 
 int main()
 {
-    int ch;
-
-    printf("Podaj dowolna liczbe calkowita: ");
-    scanf("%d", &ch);
-    printf("Pod kodem %d kryje sie literka %c.\n", ch, ch);
+    int i, j;
+    for (i=1;i<=5;i++)
+    {
+        for (j=0;j<i;j++)
+        {
+            printf("%c", '$');
+        }
+        printf("\n");
+    }
     return 0;
 }
