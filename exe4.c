@@ -5,6 +5,7 @@ int main()
     char ch, i, j;
     int spacje, znaki;
 
+
     printf("Podaj dowolna wielka litere: ");
     scanf("%c", &ch);
     spacje = ch - 'A';

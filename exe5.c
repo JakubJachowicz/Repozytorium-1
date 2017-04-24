@@ -5,6 +5,7 @@ int main()
     int pierwsza, ostatnia, zakres;
     int i, j;
 
+
     printf("Podaj pierwsza liczbe calkowita: ");
     scanf("%d", &pierwsza);
     printf("Teraz podaj ostatnia liczbe calkowita: ");
