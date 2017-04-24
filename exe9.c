@@ -5,6 +5,7 @@ int main()
     int liczby[8];
     int i;
 
+
     printf("Podaj osiem liczb calkowitych:\n");
     for (i=0;i<8;i++)
     {
