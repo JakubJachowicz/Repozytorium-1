@@ -4,6 +4,8 @@ int main()
 {
     double Ewa, Kasia;
     int rok;
+
+
     rok = 1;
     Ewa = Kasia = 100.0;
 
