@@ -1,18 +1,18 @@
 #include <stdio.h>
-
-void szescian(float);
+#include <string.h>
 
 int main()
 {
-    float liczba;
+    char wyraz[40];
+    int i;
 
-    printf("Podaj liczbe zmiennoprzecinkowa: ");
-    scanf("%f", &liczba);
-    szescian(liczba);
+    printf("Podaj dowolny wyraz:\n");
+    scanf("%s", wyraz);
+    i = strlen(wyraz)-1;
+    for (i;i>=0;i--)
+    {
+        printf("%c", wyraz[i]);
+    }
+    printf("\n");
     return 0;
-}
-
-void szescian(float n)
-{
-    printf("Liczba %.2f do potegi trzeciej to %.4f\n", n, n*n*n);
 }
