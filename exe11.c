@@ -4,6 +4,8 @@ int main()
 {
     int tablica[8];
     int i;
+
+
     tablica[0] = 2;
     for(i=1;i<8;i++)
     {
