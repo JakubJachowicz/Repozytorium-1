@@ -6,6 +6,7 @@ int main()
 {
     float f1, f2;
 
+
     printf("Podaj dwie liczby zmiennoprzecinkowe: ");
     while(scanf("%f %f", &f1, &f2) == 2)
     {

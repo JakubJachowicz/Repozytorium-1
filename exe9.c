@@ -11,6 +11,7 @@ int main()
     {
         scanf("%d", &liczby[i]);
     }
+
     printf("Te liczby w odwrotnej kolejnosci to:\n");
     for (i=7;i>=0;i--)
     {
