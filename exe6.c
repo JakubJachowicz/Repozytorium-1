@@ -10,6 +10,7 @@ int main()
     printf("Podaj dowolny wyraz:\n");
     scanf("%s", wyraz);
     i = strlen(wyraz)-1;
+
     for (i;i>=0;i--)
     {
         printf("%c", wyraz[i]);
