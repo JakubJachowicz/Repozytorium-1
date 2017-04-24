@@ -6,6 +6,7 @@ int main()
     char wyraz[40];
     int i;
 
+
     printf("Podaj dowolny wyraz:\n");
     scanf("%s", wyraz);
     i = strlen(wyraz)-1;
