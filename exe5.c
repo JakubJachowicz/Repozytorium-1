@@ -2,18 +2,30 @@
 
 int main()
 {
-    int licznik = 0;
-    int suma = 0;
-    int limit;
+    int pierwsza, ostatnia, zakres;
+    int i, j;
 
-    printf("Sume kwadratow ilu liczb naturalnych ma podac program?\n");
-    scanf("%d", &limit);
-    while(licznik<=limit)
+    printf("Podaj pierwsza liczbe calkowita: ");
+    scanf("%d", &pierwsza);
+    printf("Teraz podaj ostatnia liczbe calkowita: ");
+    scanf("%d", &ostatnia);
+    zakres = ostatnia - pierwsza +1;
+    int tablica[zakres][3];
+    printf("\nn    n^2  n^3\n");
+    for (i = 0; i<zakres; i++)
     {
-        suma += licznik*licznik;
-        licznik++;
+        tablica[i][0] = pierwsza;
+        tablica[i][1] = pierwsza*pierwsza;
+        tablica[i][2] = pierwsza*pierwsza*pierwsza;
+        pierwsza++;
     }
-    printf("Suma kwadratow %d pierwszych liczb naturalnych to %d.\n", limit, suma);
+    for (i=0; i<zakres; i++)
+    {
+        for(j=0; j<3; j++)
+        {
+            printf("%-4d ", tablica[i][j]);
+        }
+        printf("\n");
+    }
     return 0;
 }
-
