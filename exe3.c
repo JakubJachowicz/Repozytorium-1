@@ -5,6 +5,7 @@ int main()
 {
     int dni, tygodnie;
 
+
     printf("Podaj dowolna liczbe dni: ");
     scanf("%d", &dni);
     tygodnie = dni/DAYS_PER_WEEK;

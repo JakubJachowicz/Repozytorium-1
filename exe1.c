@@ -7,6 +7,8 @@ int main()
     char tablica[ArSize];
     int i;
     char ch;
+
+
     printf("Podaj 26 znakow:\n");
     for (i=0;i<ArSize;i++)
     {
